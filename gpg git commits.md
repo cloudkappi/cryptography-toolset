@@ -29,15 +29,17 @@ gpg -passwd abc@email.com
 </br>
 </br>
 
-# Command to fetch Public keys. 
-Copy paste the public key into github under GPG section for new key
-</br>
+# Command to list Public keys
 gpg --list-secret-keys --keyid-format LONG
 </br>
 </br>
 </br>
 
-# Copy the Key ID from above output once public key is added
+# Exporting Public Key
+Copy paste the public key from above output into github under GPG section for new key. This will give you a new Key ID
+
+Copy the newly created Key ID to export as shown below
+
 gpg --armor --export 530650148D937CE2
 
 You can also obtain the public key as below from the command line
