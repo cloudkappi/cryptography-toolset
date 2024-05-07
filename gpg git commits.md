@@ -29,7 +29,9 @@ gpg -passwd abc@email.com
 </br>
 </br>
 
-# Command to fetch Public keys. Copy paste the public key into github under GPG section for new key
+# Command to fetch Public keys. 
+Copy paste the public key into github under GPG section for new key
+</br>
 gpg --list-secret-keys --keyid-format LONG
 </br>
 </br>
