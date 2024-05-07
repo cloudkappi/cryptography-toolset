@@ -1,8 +1,8 @@
 # Install gpg on Ubuntu with below command
 sudo apt-get install gnupg
-
-
-
+&nbsp; 
+&nbsp; 
+&nbsp; 
 # To check any existing key in system
 gpg --list-keys
 
