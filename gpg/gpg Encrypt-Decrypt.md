@@ -1,6 +1,13 @@
 # Table of Content
+ 
+- [Table of Content](#table-of-content)
 - [Self Encrypt and Decrypt of file](#self-encrypt-and-decrypt-of-file)
-- [Encrypting for Multiple Recipients](#encrypting-for-multiple-recipients)
+    - [Install gpg on Ubuntu](#install-gpg-on-ubuntu)
+    - [To check any existing key](#to-check-any-existing-key)
+    - [Generate new keys](#generate-new-keys)
+    - [Exporting Public Key](#exporting-public-key)
+    - [Encrypt a file](#encrypt-a-file)
+    - [Decrypt a file](#decrypt-a-file)
 
 # Self Encrypt and Decrypt of file
 ### Install gpg on Ubuntu
@@ -45,5 +52,3 @@ gpg --output encrypted_file.gpg --encrypt --recipient userid file_to_encrypt.txt
 gpg --output decrypted_file.txt --decrypt encrypted_file.gpg
 ```
 </br>
-
-# Encrypting for Multiple Recipients
