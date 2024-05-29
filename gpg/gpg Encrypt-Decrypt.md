@@ -1,30 +1,28 @@
 # Self Encrypt and Decrypt of file
 - [Self Encrypt and Decrypt of file](#self-encrypt-and-decrypt-of-file)
-  - [Install gpg on Ubuntu](#install-gpg-on-ubuntu)
-  - [To check any existing key](#to-check-any-existing-key)
-  - [Generate new keys](#generate-new-keys)
-  - [Exporting Public Key](#exporting-public-key)
-  - [Encrypt a file](#encrypt-a-file)
-  - [Decrypt a file](#decrypt-a-file)
+    - [Install gpg on Ubuntu](#install-gpg-on-ubuntu)
+    - [To check any existing key](#to-check-any-existing-key)
+    - [Generate new keys](#generate-new-keys)
+    - [Exporting Public Key](#exporting-public-key)
+    - [Encrypt a file](#encrypt-a-file)
+    - [Decrypt a file](#decrypt-a-file)
 
-## Install gpg on Ubuntu
+### Install gpg on Ubuntu
 ```
 sudo apt-get install gnupg
 ```
 </br>
-</br>
-</br>
 
-## To check any existing key
+### To check any existing key
 ```
 gpg --list-keys
 ```
 </br>
-</br>
-</br>
 
-## Generate new keys
+### Generate new keys
+```
 gpg --full-generate-key
+```
 
 1. Select the Key type
 2. Select the bit size
@@ -33,23 +31,21 @@ gpg --full-generate-key
 5. Enter verified email id assocaited with the account
 6. After final submission it will ask for Passphrase. This passphrase will be used during commit
 </br>
-</br>
-</br>
 
-## Exporting Public Key
+### Exporting Public Key
+```
 gpg --export --armor --output gpg_public_key.asc abc@email.com
-</br>
-</br>
+```
 </br>
 
-## Encrypt a file
+### Encrypt a file
+```
 gpg --output encrypted_file.gpg --encrypt --recipient userid file_to_encrypt.txt
-</br>
-</br>
+```
 </br>
 
-## Decrypt a file
+### Decrypt a file
+```
 gpg --output decrypted_file.txt --decrypt encrypted_file.gpg
-</br>
-</br>
+```
 </br>
