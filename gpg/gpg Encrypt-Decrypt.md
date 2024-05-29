@@ -1,5 +1,4 @@
-# Table of Contents
-- [Table of Contents](#table-of-contents)
+Table of Content
 - [Self Encrypt and Decrypt of file](#self-encrypt-and-decrypt-of-file)
     - [Install gpg on Ubuntu](#install-gpg-on-ubuntu)
     - [To check any existing key](#to-check-any-existing-key)
