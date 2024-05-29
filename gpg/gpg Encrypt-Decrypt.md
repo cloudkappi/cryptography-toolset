@@ -8,6 +8,12 @@
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[1.4 Exporting Public Key](#exporting-public-key)</br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[1.5 Encrypt a file](#encrypt-a-file)</br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[1.6 Decrypt a file](#decrypt-a-file)</br>
+**[2. # Encrypt for multiple recipient](#encrypt-for-multiple-recipient)**</br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[2.1 Key Generation](#each-recipients-generates-their-keys)</br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[2.2 Exporting Public Keys](#exporting-public-keys)</br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[2.3 Importing Public Keys](#importing-public-keys)</br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[2.4 Encrypting File](#encrypting-file)</br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[2.5 Decrypting File](#decrypting-file)</br>
 
 ### Install gpg on Ubuntu
 ```
@@ -51,3 +57,39 @@ gpg --output encrypted_file.gpg --encrypt --recipient userid file_to_encrypt.txt
 gpg --output decrypted_file.txt --decrypt encrypted_file.gpg
 ```
 </br>
+
+# Encrypt for multiple recipient
+
+ GPG allows you to encrypt a message or file and recipients can decrypt it using their own private key. 
+
+### Each recipients generates their keys 
+```
+gpg --gen-key
+```
+
+### Exporting Public Keys
+```
+gpg --export -a "Alice" > alice_public_key.asc
+```
+```
+gpg --export -a "Bob" > bob_public_key.asc
+```
+
+### Importing Public Keys
+```
+gpg --import bob_public_key.asc
+```
+```
+gpg --import alice_public_key.asc
+```
+
+### Encrypting File
+```
+gpg --output message_for_alice_and_bob.gpg --encrypt --recipient alice@example.com --recipient bob@example.com message.txt
+```
+
+### Decrypting File
+```
+gpg --output decrypted_message.txt --decrypt message_for_alice_and_bob.gpg
+```
+
