@@ -8,6 +8,7 @@
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[1.4 Exporting Public Key](#exporting-public-key)</br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[1.5 Encrypt a file](#encrypt-a-file)</br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[1.6 Decrypt a file](#decrypt-a-file)</br>
+    </br>
 **[2. # Encrypt for multiple recipient](#encrypt-for-multiple-recipient)**</br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[2.1 Key Generation](#each-recipients-generates-their-keys)</br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[2.2 Exporting Public Keys](#exporting-public-keys)</br>
