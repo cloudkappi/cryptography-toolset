@@ -44,7 +44,7 @@ gpg --armor --export 530650148D937CE2
 
 You can also obtain the public key as below from the command line
 
-gpg --export --armor --output example.gpg.pub abc@email.com
+gpg --export --armor --output gpg_public_key.asc abc@email.com
 </br>
 </br>
 </br>
