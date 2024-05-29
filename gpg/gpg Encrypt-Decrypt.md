@@ -1,7 +1,7 @@
 # Encrypt and Decrypt File
 
-# Table of Content
-**[1. Encrypt and Decrypt file](#encrypt-and-decrypt-file)**
+### Table of Content
+**[1. Encrypt and Decrypt file](#encrypt-and-decrypt-file)**</br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[1.1 Install gpg on Ubuntu](#install-gpg-on-ubuntu)
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[1.2 To check any existing key](#to-check-any-existing-key)
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[1.3 Generate new keys](#generate-new-keys)
