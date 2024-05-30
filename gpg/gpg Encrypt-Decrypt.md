@@ -94,3 +94,6 @@ gpg --output message_for_alice_and_bob.gpg --encrypt --recipient alice@example.c
 gpg --output decrypted_message.txt --decrypt message_for_alice_and_bob.gpg
 ```
 
+#### Additional Notes
+
+GPG is primarly designed to encrypting individual files, it is combined with 'tar' to encrypt multiple files, folders, file system
