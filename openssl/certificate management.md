@@ -17,3 +17,9 @@ openssl enc -aes-256-cbc -salt -in file.txt -out file.enc
 ```
 openssl enc -aes-256-cbc -d -in file.enc -out file.dec
 ```
+
+### Check Certificate Expiration Date
+```
+openssl x509 -in server.crt -noout -text
+```
+Not Before and Not After fields in the output to check the validity period of the certificate
