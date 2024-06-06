@@ -122,3 +122,9 @@ openssl s_server -accept 4433 -cert server.crt -key server.key
 ```
 openssl s_client -connect localhost:4433
 ```
+
+## 14. Creating Key for S3 SSE-C Encryption
+- ### Key generation using below command
+```
+openssl enc -aes-128-cbc -k mysecret -P
+```
